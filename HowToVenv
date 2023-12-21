@@ -1,0 +1,25 @@
+ python<version> -m venv <virtual-environment-name>
+##python3.8 -m venv envVV
+source envVV/bin/activate
+
+----------
+First we check the list of packages installed in our virtual environment 
+    pip list
+
+
+To install new libraries, you can easily just pip install the libraries. The virtual environment will make use of its own pip, so you don't need to use pip3.
+After installing your required libraries, you can view all installed libraries by using pip list, or you can generate a text file listing all your project dependencies by running the code below:
+
+pip freeze > requirements.txt
+
+
+
+ pip install -r requirements.txt
+
+
+
+
+
+
+
+ deactivate

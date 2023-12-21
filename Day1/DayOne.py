@@ -1,9 +1,10 @@
-user_text = input("Enter a todo:")
+user_prompt="Enter a todo:"
+user_text = input(user_prompt)
 print(user_text)
 
 
-def print_hi(name):
-    print(f'Hi, {name}')
+# def print_hi(name):
+#     print(f'Hi, {name}')
 
 
 
