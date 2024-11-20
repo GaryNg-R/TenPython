@@ -1,6 +1,6 @@
  python<version> -m venv <virtual-environment-name>
-##python3.8 -m venv envVV
-source envVV/bin/activate
+##python3.8 -m venv local-dev
+source local-dev/bin/activate
 
 ----------
 First we check the list of packages installed in our virtual environment 
