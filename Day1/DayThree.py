@@ -1,7 +1,10 @@
 def print_todo(todos):
     new_todos = []
-    for item in todos:
-        new_todos.append(item.strip("\n"))
+    # for item in todos:
+    #     new_todos.append(item.strip("\n"))
+    new_todos = [item.strip('\n') for item in todos]
+
+
     for i, item in enumerate(new_todos, start = 1):
         print(i, item)
 
@@ -9,9 +12,14 @@ while True:
     user_action = input("Choose View or Add or Edit or Compelet or  Exit: ")
     match user_action.strip():
         case 'View':
-            file = open('todos.txt', 'r')
-            todos = file.readlines()
-            file.close()
+            # file = open('todos.txt', 'r')
+            # todos = file.readlines()
+            # file.close()
+
+            # better way 
+            with open('todos.txt', 'r') as file:
+                todos = file.readlines()
+
             print_todo(todos)
         case 'Add':
             todo = input("add a todo: ")+ '\n'
